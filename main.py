@@ -18,4 +18,5 @@ def parse_args():
 if __name__ == "__main__":
     file_name = parse_args()
     reporter = Reporter(file_name)
-    reporter.generate_report()
+    result = reporter.generate_report()
+    print(result)
